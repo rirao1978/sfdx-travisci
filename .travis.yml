@@ -9,7 +9,7 @@ git:
   submodules:
     false
 before_install:
-- echo -e "machine bitbucket.org\n  login rrao1\n  password Freedom@20" >~/.netrc
+- echo -e "machine bitbucket.org\n  login rrao1\n  password Freedom@18" >~/.netrc
 - git submodule update --init --recursive
 - openssl aes-256-cbc -K $encrypted_cad4f862d573_key -iv $encrypted_cad4f862d573_iv -in assets/server.key.enc -out assets/server.key -d
 - export SFDX_AUTOUPDATE_DISABLE=false
